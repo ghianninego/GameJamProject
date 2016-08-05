@@ -9,7 +9,9 @@ public class GameManager : MonoBehaviour {
 	public float totalTime = 40f;
 	public UILabel timerlabel;
 	public GameObject gameOver;
+
 	private float timer;
+	private float totalScore;
 
 	void OnEnable() {
 		if (Instance == null) {
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour {
 
 	void Start () {
 		gameOver.SetActive (false);
+
+		totalScore = 0;
 		timer = totalTime+1;
 		timerlabel.text = "Time: " + timer+"s";
 	}
@@ -33,13 +37,17 @@ public class GameManager : MonoBehaviour {
 		timer -= Time.deltaTime;
 
 		if (timer <= 0) {
-			showGameOver ();
+			ShowGameOver ();
 		}
 
 		timerlabel.text = "Time: " + (int)timer+"s";
 	}
 
-	private void showGameOver() {
+	public void SetScore(float x){
+		totalScore += x;
+	}
+
+	void ShowGameOver() {
 		gameOver.SetActive (true);
 		Time.timeScale = 0;
 	}

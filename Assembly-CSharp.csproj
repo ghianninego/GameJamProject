@@ -187,8 +187,10 @@
      <Compile Include="Assets\Scripts\FacilitiesScript.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\PatientScript.cs" />
+     <Compile Include="Assets\Scripts\PauseButton.cs" />
      <Compile Include="Assets\Scripts\PlayButton.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\ResumeScript.cs" />
      <Compile Include="Assets\Scripts\ScoreScript.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.9.8.txt" />

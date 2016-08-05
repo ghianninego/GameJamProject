@@ -1,0 +1,1170 @@
+fileFormatVersion: 2
+guid: 394069be22d2749db942ac9214c088b4
+timeCreated: 1470357280
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hospital_0
+    21300002: hospital_1
+    21300004: hospital_2
+    21300006: hospital_3
+    21300008: hospital_4
+    21300010: hospital_5
+    21300012: hospital_6
+    21300014: hospital_7
+    21300016: hospital_8
+    21300018: hospital_9
+    21300020: hospital_10
+    21300022: hospital_11
+    21300024: hospital_12
+    21300026: hospital_13
+    21300028: hospital_14
+    21300030: hospital_15
+    21300032: hospital_16
+    21300034: hospital_17
+    21300036: hospital_18
+    21300038: hospital_19
+    21300040: hospital_20
+    21300042: hospital_21
+    21300044: hospital_22
+    21300046: hospital_23
+    21300048: hospital_24
+    21300050: hospital_25
+    21300052: hospital_26
+    21300054: hospital_27
+    21300056: hospital_28
+    21300058: hospital_29
+    21300060: hospital_30
+    21300062: hospital_31
+    21300064: hospital_32
+    21300066: hospital_33
+    21300068: hospital_34
+    21300070: hospital_35
+    21300072: hospital_36
+    21300074: hospital_37
+    21300076: hospital_38
+    21300078: hospital_39
+    21300080: hospital_40
+    21300082: hospital_41
+    21300084: hospital_42
+    21300086: hospital_43
+    21300088: hospital_44
+    21300090: hospital_45
+    21300092: hospital_46
+    21300094: hospital_47
+    21300096: hospital_48
+    21300098: hospital_49
+    21300100: hospital_50
+    21300102: hospital_51
+    21300104: hospital_52
+    21300106: hospital_53
+    21300108: hospital_54
+    21300110: hospital_55
+    21300112: hospital_56
+    21300114: hospital_57
+    21300116: hospital_58
+    21300118: hospital_59
+    21300120: hospital_60
+    21300122: hospital_61
+    21300124: hospital_62
+    21300126: hospital_63
+    21300128: hospital_64
+    21300130: hospital_65
+    21300132: hospital_66
+    21300134: hospital_67
+    21300136: hospital_68
+    21300138: hospital_69
+    21300140: hospital_70
+    21300142: hospital_71
+    21300144: hospital_72
+    21300146: hospital_73
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: hospital_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 448
+        width: 134
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -67, y: 31.5}
+        - {x: -67, y: -26.5}
+        - {x: -52, y: -31.5}
+        - {x: 67, y: -31.5}
+        - {x: 67, y: 31.5}
+    - name: hospital_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 448
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31.5}
+        - {x: -16, y: -31.5}
+        - {x: 16, y: -31.5}
+        - {x: 16, y: 31.5}
+    - name: hospital_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 450
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_3
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 450
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 450
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 450
+        width: 31
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_6
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 481
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_7
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 488
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_8
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 483
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_9
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 483
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 449
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_11
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 454
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_12
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 458
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_13
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 462
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_14
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 453
+        width: 18
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_15
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 452
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 423
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 384
+        width: 149
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: 31.5}
+        - {x: -73.5, y: 23.5}
+        - {x: -74.5, y: 19.5}
+        - {x: -74.5, y: -27.5}
+        - {x: -58.5, y: -31.5}
+        - {x: 59.5, y: -31.5}
+        - {x: 66.5, y: -30.5}
+        - {x: 66.5, y: 26.5}
+        - {x: 21.5, y: 31.5}
+      - - {x: 70.5, y: -22.5}
+        - {x: 70.5, y: -23.5}
+        - {x: 73.5, y: -26.5}
+        - {x: 74.5, y: -26.5}
+        - {x: 74.5, y: -20.5}
+        - {x: 72.5, y: -20.5}
+    - name: hospital_18
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31.5}
+        - {x: -16, y: -31.5}
+        - {x: 16, y: -31.5}
+        - {x: 16, y: 31.5}
+    - name: hospital_19
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 350
+        width: 264
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -126, y: 49}
+        - {x: -126, y: -49}
+        - {x: 132, y: -49}
+        - {x: 132, y: 49}
+      - - {x: -132, y: -20}
+        - {x: -129, y: -20}
+        - {x: -127, y: -18}
+        - {x: -128, y: -15}
+        - {x: -132, y: -15}
+      - - {x: 18, y: 41}
+        - {x: 9, y: 34}
+        - {x: 9, y: 24}
+        - {x: 11, y: 20}
+        - {x: 23, y: 20}
+        - {x: 32, y: 23}
+        - {x: 32, y: 40}
+        - {x: 26, y: 41}
+      - - {x: 74, y: 20}
+        - {x: 96, y: 20}
+        - {x: 96, y: 41}
+        - {x: 95, y: 44}
+        - {x: 73, y: 44}
+        - {x: 73, y: 23}
+      - - {x: 114, y: 39}
+        - {x: 112, y: 37}
+        - {x: 112, y: 29}
+        - {x: 114, y: 27}
+        - {x: 118, y: 27}
+        - {x: 120, y: 29}
+        - {x: 120, y: 37}
+        - {x: 118, y: 39}
+      - - {x: 62, y: 37}
+        - {x: 64, y: 35}
+        - {x: 67, y: 36}
+        - {x: 67, y: 40}
+        - {x: 65, y: 42}
+        - {x: 62, y: 41}
+    - name: hospital_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 362
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_22
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 320
+        width: 142
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25, y: 31.5}
+        - {x: -65, y: 24.5}
+        - {x: -65, y: -30.5}
+        - {x: -59, y: -31.5}
+        - {x: 51, y: -31.5}
+        - {x: 71, y: -26.5}
+        - {x: 71, y: 24.5}
+        - {x: 49, y: 31.5}
+      - - {x: -71, y: -29.5}
+        - {x: -68, y: -28.5}
+        - {x: -68, y: -25.5}
+        - {x: -70, y: -23.5}
+        - {x: -71, y: -23.5}
+    - name: hospital_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 320
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 31.5}
+        - {x: -16, y: -31.5}
+        - {x: 16, y: -31.5}
+        - {x: 16, y: 31.5}
+    - name: hospital_24
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 325
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 157
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55.5, y: -53.5}
+        - {x: 78.5, y: -41.5}
+        - {x: 78.5, y: 14.5}
+        - {x: 66.5, y: 15.5}
+        - {x: 76.5, y: 23.5}
+        - {x: 78.5, y: 30.5}
+        - {x: 78.5, y: 66.5}
+        - {x: 73.5, y: 72.5}
+        - {x: 13.5, y: 72.5}
+        - {x: -22.5, y: 61.5}
+        - {x: -78.5, y: 17.5}
+        - {x: -78.5, y: -45.5}
+        - {x: -74.5, y: -72.5}
+        - {x: 78.5, y: -72.5}
+        - {x: 78.5, y: -56.5}
+        - {x: 77.5, y: -54.5}
+      - - {x: -0.5, y: 72.5}
+        - {x: -0.5, y: 55.5}
+        - {x: 1.5, y: 53.5}
+        - {x: 33.5, y: 53.5}
+        - {x: 35.5, y: 55.5}
+        - {x: 35.5, y: 72.5}
+      - - {x: -78.5, y: 72.5}
+        - {x: -78.5, y: 60.5}
+        - {x: -27.5, y: 60.5}
+        - {x: -25.5, y: 62.5}
+        - {x: -25.5, y: 72.5}
+    - name: hospital_26
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 296
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_27
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 303
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 16.5}
+        - {x: -28, y: -16.5}
+        - {x: 28, y: -16.5}
+        - {x: 28, y: 16.5}
+    - name: hospital_28
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 303
+        width: 56
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 16.5}
+        - {x: -28, y: -16.5}
+        - {x: 28, y: -16.5}
+        - {x: 28, y: 16.5}
+    - name: hospital_29
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 325
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_30
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 313
+        width: 55
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 128
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 55.5}
+        - {x: 19, y: 42.5}
+        - {x: -64, y: 10.5}
+        - {x: -64, y: -6.5}
+        - {x: -61, y: -55.5}
+        - {x: 35, y: -55.5}
+        - {x: 64, y: 13.5}
+        - {x: 64, y: 55.5}
+      - - {x: 36, y: -4.5}
+        - {x: 36, y: -49.5}
+        - {x: 61, y: -49.5}
+        - {x: 61, y: -4.5}
+      - - {x: 61, y: 7.5}
+        - {x: 63, y: 5.5}
+        - {x: 64, y: 5.5}
+        - {x: 64, y: 10.5}
+        - {x: 62, y: 10.5}
+    - name: hospital_32
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 301
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_33
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 224
+        width: 93
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14.5, y: 30}
+        - {x: -46.5, y: 24}
+        - {x: -46.5, y: -27}
+        - {x: -43.5, y: -30}
+        - {x: 46.5, y: -30}
+        - {x: 46.5, y: 30}
+    - name: hospital_34
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 238
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_35
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 258
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_36
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 179
+        width: 66
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33, y: 46.5}
+        - {x: -33, y: -26.5}
+        - {x: -19, y: -46.5}
+        - {x: 17, y: -46.5}
+        - {x: 33, y: -15.5}
+        - {x: 33, y: 46.5}
+    - name: hospital_37
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 233
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 143
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26, y: 23.5}
+        - {x: 21, y: 15.5}
+        - {x: -12, y: 23.5}
+        - {x: -45, y: 23.5}
+        - {x: -48, y: 16.5}
+        - {x: -48, y: -23.5}
+        - {x: 48, y: -23.5}
+        - {x: 48, y: 10.5}
+        - {x: 36, y: 23.5}
+    - name: hospital_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 70
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24, y: 64}
+        - {x: -35, y: 19}
+        - {x: -35, y: -28}
+        - {x: -31, y: -64}
+        - {x: 33, y: -64}
+        - {x: 35, y: -45}
+        - {x: 35, y: 38}
+        - {x: 31, y: 64}
+      - - {x: 32, y: -55}
+        - {x: 34, y: -57}
+        - {x: 35, y: -57}
+        - {x: 35, y: -33}
+        - {x: 32, y: -34}
+      - - {x: 19, y: 35}
+        - {x: 22, y: 36}
+        - {x: 22, y: 39}
+        - {x: 19, y: 40}
+        - {x: 17, y: 38}
+      - - {x: 32, y: 37}
+        - {x: 34, y: 35}
+        - {x: 35, y: 35}
+        - {x: 35, y: 42}
+        - {x: 32, y: 41}
+      - - {x: 31, y: 64}
+        - {x: 31, y: 52}
+        - {x: 34, y: 49}
+        - {x: 35, y: 49}
+        - {x: 35, y: 64}
+    - name: hospital_40
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 164
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_41
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 164
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 180
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 179
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_44
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 181
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 96
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: 51}
+        - {x: -48, y: -51}
+        - {x: 45, y: -51}
+        - {x: 48, y: -45}
+        - {x: 48, y: 22}
+        - {x: -9, y: 51}
+    - name: hospital_46
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 128
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_47
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 96
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 131
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_49
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 135
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_50
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 131
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_51
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 70
+        width: 67
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 40}
+        - {x: -28.5, y: 28}
+        - {x: -28.5, y: -34}
+        - {x: -23.5, y: -40}
+        - {x: 30.5, y: -40}
+        - {x: 33.5, y: -36}
+        - {x: 33.5, y: 3}
+        - {x: 28.5, y: 40}
+      - - {x: -30.5, y: 7}
+        - {x: -30.5, y: 10}
+        - {x: -33.5, y: 11}
+        - {x: -33.5, y: 6}
+      - - {x: -28.5, y: 6}
+        - {x: -25.5, y: 7}
+        - {x: -25.5, y: 10}
+        - {x: -28.5, y: 11}
+        - {x: -30.5, y: 9}
+    - name: hospital_52
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 72
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_53
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 72
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_54
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 72
+        width: 22
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_55
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 105
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_56
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 98
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_57
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 98
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 103
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_59
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_60
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 12
+        width: 27
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 11
+        width: 32
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: 42}
+        - {x: -16, y: 42}
+        - {x: -16, y: -42}
+        - {x: 16, y: -42}
+        - {x: 16, y: 24}
+        - {x: 15, y: 40}
+    - name: hospital_62
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 66
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_63
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 71
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30, y: 18.5}
+        - {x: -32, y: 16.5}
+        - {x: -32, y: -18.5}
+        - {x: 32, y: -18.5}
+        - {x: 32, y: 18.5}
+    - name: hospital_65
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 12
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_66
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 13
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_67
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_68
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2
+        width: 27
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_69
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_70
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_71
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 34
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: hospital_72
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 14
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 18.5}
+        - {x: -22.5, y: -18.5}
+        - {x: 22.5, y: -18.5}
+        - {x: 22.5, y: 18.5}
+    - name: hospital_73
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 14
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 18.5}
+        - {x: -22.5, y: -18.5}
+        - {x: 22.5, y: -18.5}
+        - {x: 22.5, y: 18.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

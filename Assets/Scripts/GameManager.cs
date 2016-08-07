@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager Instance = null;
 
-	public float totalTime = 40f;
+	public float totalTime = 60f;
+	public int totalPatients = 6;
 	public UILabel timerlabel;
+	public UILabel patientsLabel;
 	public GameObject gameOver;
 
 	private float timer;
@@ -45,6 +47,11 @@ public class GameManager : MonoBehaviour {
 
 	public void SetScore(float x){
 		totalScore += x;
+	}
+
+	public void removePatients(){
+		totalPatients -= 1;
+		patientsLabel.text = "Patients: " + totalPatients;
 	}
 
 	void ShowGameOver() {

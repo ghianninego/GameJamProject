@@ -5,9 +5,9 @@ public class PlayerManager : MonoBehaviour {
 
 	public static PlayerManager Instance = null;
 
-	public int boyPatienceLevel = 15;
-	public int teacherPatienceLevel = 25;
-	public int girlPatienceLevel = 10;
+	public int boyPatienceLevel = 25;
+	public int girlPatienceLevel = 15;
+	public int teacherPatienceLevel = 30;
 
 	private bool served;
 
@@ -23,7 +23,7 @@ public class PlayerManager : MonoBehaviour {
 		}
 	}
 
-	public int setPatienceLevel(string x) {
+	public int SetPatienceLevel(string x) {
 		switch (x) {
 		case "Boy":
 			return boyPatienceLevel;

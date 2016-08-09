@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour {
 
 		totalScore = 0;
 		timer = totalTime+1;
-		timerlabel.text = "Time: " + timer+"s";
+		timerlabel.text = timer+"s";
 	}
 
 	void Update () {
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 			ShowGameOver ();
 		}
 
-		timerlabel.text = "Time: " + (int)timer+"s";
+		timerlabel.text = "" +(int)timer+"s";
 	}
 
 	public void SetScore(float x){
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
 
 	public void removePatients(){
 		totalPatients -= 1;
-		patientsLabel.text = "Patients: " + totalPatients;
+		patientsLabel.text = "" + totalPatients;
 	}
 
 	void ShowGameOver() {

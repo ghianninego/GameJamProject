@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class ExitButton : MonoBehaviour {
 
-	void OnClick() {
+	public void OnClick() {
 		SceneManager.LoadScene (0);
+		Time.timeScale = 1;
 	}
 }

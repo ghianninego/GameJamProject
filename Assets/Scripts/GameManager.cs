@@ -6,10 +6,14 @@ public class GameManager : MonoBehaviour {
 
 	public static GameManager Instance = null;
 
-	public float totalTime = 40f;
+	public float totalTime = 60f;
+	public int totalPatients = 6;
 	public UILabel timerlabel;
+	public UILabel patientsLabel;
 	public GameObject gameOver;
+
 	private float timer;
+	private float totalScore;
 
 	void OnEnable() {
 		if (Instance == null) {
@@ -25,6 +29,8 @@ public class GameManager : MonoBehaviour {
 
 	void Start () {
 		gameOver.SetActive (false);
+
+		totalScore = 0;
 		timer = totalTime+1;
 		timerlabel.text = "Time: " + timer+"s";
 	}
@@ -33,13 +39,22 @@ public class GameManager : MonoBehaviour {
 		timer -= Time.deltaTime;
 
 		if (timer <= 0) {
-			showGameOver ();
+			ShowGameOver ();
 		}
 
 		timerlabel.text = "Time: " + (int)timer+"s";
 	}
 
-	private void showGameOver() {
+	public void SetScore(float x){
+		totalScore += x;
+	}
+
+	public void removePatients(){
+		totalPatients -= 1;
+		patientsLabel.text = "Patients: " + totalPatients;
+	}
+
+	void ShowGameOver() {
 		gameOver.SetActive (true);
 		Time.timeScale = 0;
 	}

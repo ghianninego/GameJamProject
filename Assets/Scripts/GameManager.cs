@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
 	public UILabel timerlabel;
 	public UILabel patientsLabel;
 	public GameObject gameOver;
+	public UIProgressBar scoreBar;
 
 	private float timer;
 	private float totalScore;
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void SetScore(float x){
-		totalScore += x;
+		scoreBar.value += (x/totalPatients);
 	}
 
 	public void removePatients(){

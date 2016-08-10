@@ -1,8 +1,0 @@
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
--define:UNITY_5_3_OR_NEWER
--define:UNITY_5_3_5
--define:UNITY_5_3
--define:UNITY_5
--define:ENABLE_NEW_BUGREPORTER
--define:ENABLE_AUDIO
--define:ENABLE_CACHING

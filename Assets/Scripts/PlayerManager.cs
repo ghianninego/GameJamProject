@@ -23,6 +23,10 @@ public class PlayerManager : MonoBehaviour {
 		}
 	}
 
+	void Start() {
+
+	}
+
 	public int SetPatienceLevel(string x) {
 		switch (x) {
 		case "Boy":

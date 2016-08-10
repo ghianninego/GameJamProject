@@ -12,9 +12,7 @@ public class PatientScript : MonoBehaviour {
 
 	void Start () {
 		patienceLevel = PlayerManager.Instance.SetPatienceLevel (gameObject.tag);
-		Debug.Log (gameObject.tag);
 		currentPatience = patienceLevel;
-		Debug.Log (currentPatience);
 		concernBG.color = Color.green;
 
 		StartCoroutine("NotYetServed");
@@ -22,7 +20,7 @@ public class PatientScript : MonoBehaviour {
 
 	void Served() {
 		served = true;
-		GameManager.Instance.SetScore (currentPatience);
+		GameManager.Instance.SetScore (currentPatience/patienceLevel);
 	}
 
 	void ChangeColor() {

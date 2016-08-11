@@ -17,6 +17,9 @@ public class PlayerManager : MonoBehaviour {
 	public int girlPatienceLevel = 15;
 	public int teacherPatienceLevel = 30;
 
+	[HideInInspector]public Sprite[] allConcerns;
+	[HideInInspector]public Sprite[] allCharacters;
+
 	private bool served;
 	#endregion
 
@@ -32,6 +35,11 @@ public class PlayerManager : MonoBehaviour {
 			Instance = null;
 		}
 	}
+
+	void Awake() {
+		allConcerns = Resources.LoadAll<Sprite> ("Concerns");
+		allCharacters = Resources.LoadAll<Sprite> ("Characters");
+	}
 	#endregion
 
 	/* This function sets the patience level of a patient
@@ -40,20 +48,12 @@ public class PlayerManager : MonoBehaviour {
 	 * return: int
 	 */
 	public int SetPatienceLevel(string x) {
-		switch (x) {
-		case "Boy":
+		if (x.Contains("boy"))
 			return boyPatienceLevel;
-			break;
-		case "Girl":
+		else if (x.Contains("girl"))
 			return girlPatienceLevel;
-			break;
-		case "Teacher":
+		else
 			return teacherPatienceLevel;
-			break;
-		default:
-			return 0;
-			break;
-		}
 	}
 
 }

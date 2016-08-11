@@ -12,29 +12,38 @@ using System.Collections;
 public class PatientScript : MonoBehaviour {
 
 	#region variables
-	private SpriteRenderer character;
-	private SpriteRenderer concern;
-	private float rand1;
-	private float rand2;
+	private Transform character;
+	private Transform concern;
+	private SpriteRenderer charSprite;
+	private SpriteRenderer concSprite;
 
 	private int patienceLevel;
 	private int currentPatience;
 	private bool served = false;
 	#endregion
 
+	private GameObject clickedBed;
+	private Ray ray;
+	private RaycastHit rayHit;
+	private bool wasClicked = false;
+
+
+
 	#region MonoBehaviour
 	void Awake () {
-		character = gameObject.transform.Find ("Character").GetComponent<SpriteRenderer>();
-		concern = gameObject.transform.Find ("Concern").GetComponent<SpriteRenderer>();
+		character = gameObject.transform.Find ("Character");
+		concern = gameObject.transform.Find ("Concern");
+		charSprite = character.GetComponent<SpriteRenderer> ();
+		concSprite = concern.GetComponent<SpriteRenderer> ();
 
 		SetCharacter ();
 		SetConcern ();
 	}
 
 	void Start() {
-		patienceLevel = PlayerManager.Instance.SetPatienceLevel (character.sprite.name);
+		patienceLevel = PlayerManager.Instance.SetPatienceLevel (charSprite.sprite.name);
 		currentPatience = patienceLevel;
-		concern.color = Color.green;
+		concSprite.color = Color.green;
 
 		StartCoroutine("NotYetServed");
 	}
@@ -44,14 +53,12 @@ public class PatientScript : MonoBehaviour {
 	#region Set Sprites
 	private void SetCharacter() {
 		int x = Random.Range (0, PlayerManager.Instance.allCharacters.Length);
-		character.sprite = PlayerManager.Instance.allCharacters[x];
-		Debug.Log (character.sprite.name);
+		charSprite.sprite = PlayerManager.Instance.allCharacters [x];
 	}
 
 	private void SetConcern() {
 		int x = Random.Range (0, PlayerManager.Instance.allConcerns.Length);
-		concern.sprite = PlayerManager.Instance.allConcerns [x];
-		Debug.Log (concern.sprite.name);
+		concSprite.sprite = PlayerManager.Instance.allConcerns [x];
 	}
 	#endregion
 
@@ -74,11 +81,11 @@ public class PatientScript : MonoBehaviour {
 	 */
 	private void ChangeColor() {
 		if (currentPatience == (int)(0.25 * patienceLevel))
-			concern.color = Color.red;
+			concSprite.color = Color.red;
 		else if (currentPatience == (int)(0.5 * patienceLevel))
-			concern.color = Color.magenta;
+			concSprite.color = Color.magenta;
 		else if (currentPatience == (int)(0.75 * patienceLevel))
-			concern.color = Color.yellow;
+			concSprite.color = Color.yellow;
 	}
 
 	/* This function will run until the patient gets served.
@@ -97,10 +104,28 @@ public class PatientScript : MonoBehaviour {
 				GameManager.Instance.removePatients ();
 				break;
 			}
-
-			Debug.Log (this.gameObject.name+"--" + currentPatience);
 		}
-				
 	}
 
+	void OnMouseDown() {
+		PlayerManager.Instance.selectedSprite = this.gameObject.name;
+		wasClicked = true;
+		Debug.Log ("Selected "+PlayerManager.Instance.selectedSprite);
+	}
+
+	void Update(){
+
+		if (Input.GetMouseButtonDown (0)) {
+			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+
+			if(Physics.Raycast(ray, out rayHit)) {
+				clickedBed = rayHit.collider.gameObject;
+				if (clickedBed.tag == "Medicine" && wasClicked) {
+					this.gameObject.transform.position = clickedBed.transform.position;
+				} 
+
+			}
+
+		}
+	}
 }

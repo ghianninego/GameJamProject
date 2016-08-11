@@ -107,11 +107,10 @@ public class GameManager : MonoBehaviour {
 		while (currentPatient < totalPatients) {
 			yield return new WaitForSeconds (5f);
 			GameObject patient = (GameObject)Instantiate (somePatient);
-			patient.name = "patient"+(patientId++);
+			patient.name = "patient"+(currentPatient+1);
 
-			patient.transform.position = new Vector3 ((float)(-0.2*patientId), 0.5f, -2);
+			patient.transform.position = new Vector3 ((float)(-0.3*currentPatient), 0.5f, -2);
 			currentPatient++;
-			Debug.Log (patient.name);
 		}
 	}
 	#endregion
@@ -126,5 +125,6 @@ public class GameManager : MonoBehaviour {
 		gameOver.SetActive (true);
 		Time.timeScale = 0;
 	}
+
 
 }

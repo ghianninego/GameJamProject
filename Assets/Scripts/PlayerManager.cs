@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour {
 	[HideInInspector]public Sprite[] allConcerns;
 	[HideInInspector]public Sprite[] allCharacters;
 
+	[HideInInspector]public string selectedSprite;
 	private bool served;
 	#endregion
 
@@ -54,6 +55,10 @@ public class PlayerManager : MonoBehaviour {
 			return girlPatienceLevel;
 		else
 			return teacherPatienceLevel;
+	}
+
+	public void SelectedPatient(string x) {
+		selectedSprite = x;
 	}
 
 }

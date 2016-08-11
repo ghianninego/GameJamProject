@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject gameOver;
 	public UIProgressBar scoreBar;
 
+	public GameObject[] patients;
 	private float timer;
 	private float totalScore;
 
@@ -28,12 +29,14 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	void Start () {
+	void Start() {
 		gameOver.SetActive (false);
 
 		totalScore = 0;
 		timer = totalTime+1;
 		timerlabel.text = timer+"s";
+
+		StartCoroutine ("GeneratePatients");
 	}
 
 	void Update () {
@@ -59,4 +62,18 @@ public class GameManager : MonoBehaviour {
 		gameOver.SetActive (true);
 		Time.timeScale = 0;
 	}
+
+	IEnumerator GeneratePatients(){
+		int currentPatients = 0;
+		while (currentPatients < totalPatients) {
+			int rand = UnityEngine.Random.Range(0, patients.Length);
+			yield return new WaitForSeconds (3f);
+			GameObject sprite = GameObject.Instantiate(patients[rand]) as GameObject;
+			//sprite.transform.position= new Vector3 (-1.8f , 0.3f, 0);
+			currentPatients++;
+			Debug.Log ("NEW CHARACTER");
+		}
+	}
+
+
 }

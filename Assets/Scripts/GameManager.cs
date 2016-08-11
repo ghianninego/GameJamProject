@@ -65,11 +65,12 @@ public class GameManager : MonoBehaviour {
 
 	IEnumerator GeneratePatients(){
 		int currentPatients = 0;
+
 		while (currentPatients < totalPatients) {
 			int rand = UnityEngine.Random.Range(0, patients.Length);
 			yield return new WaitForSeconds (3f);
 			GameObject sprite = GameObject.Instantiate(patients[rand]) as GameObject;
-			//sprite.transform.position= new Vector3 (-1.8f , 0.3f, 0);
+			sprite.transform.position= new Vector3 (-1.7f , 0.25f , 0);
 			currentPatients++;
 			Debug.Log ("NEW CHARACTER");
 		}

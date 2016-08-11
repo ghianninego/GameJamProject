@@ -53,7 +53,16 @@ public class PatientScript : MonoBehaviour {
 
 			if (Physics.Raycast(ray, out rayHit)) {
 				clickedBed = rayHit.collider.gameObject;
-				//if (clickedBed.tag == concSprite.sprite.name && wasClicked)
+				/* String concern = concSprite.sprite.name.substring(0,1)
+				 * if (wasClicked) {
+				 * 		if(clickedBed.tag.equals(concern){
+				 * 			laman shit niya
+				 * 		}
+				 * 		else{
+				 * 			do something if mali naclick niya
+				 * 		}
+				 * }
+				 */
 				if (clickedBed.tag == "Medicine" && wasClicked) {
 					this.gameObject.transform.position = clickedBed.transform.position;
 					Served ();
@@ -76,7 +85,7 @@ public class PatientScript : MonoBehaviour {
 	}
 
 	private void SetConcern() {
-		int x = Random.Range (0, PlayerManager.Instance.allConcerns.Length);
+		int x = Random.Range (0, PlayerManager.Instance.allConcerns.Length-1);
 		concSprite.sprite = PlayerManager.Instance.allConcerns [x];
 	}
 	#endregion
@@ -90,6 +99,16 @@ public class PatientScript : MonoBehaviour {
 	 */
 	private void Served() {
 		served = true;
+
+		StartCoroutine ("Facilitate");
+	}
+
+	IEnumerator Facilitate() {
+		yield return new WaitForSeconds (3f);
+		concSprite.sprite = PlayerManager.Instance.allConcerns [4];
+
+		yield return new WaitForSeconds (2f);
+		//PlayerManager.Instance.RemovePatient ();
 		GameManager.Instance.SetScore (currentPatience/patienceLevel);
 	}
 		
@@ -105,6 +124,7 @@ public class PatientScript : MonoBehaviour {
 			currentPatience -= 1;
 			ChangeColor ();
 			if (currentPatience == 0) {
+				//PlayerManager.Instance.RemovePatient ();
 				Destroy (gameObject);
 				GameManager.Instance.removePatients ();
 				break;

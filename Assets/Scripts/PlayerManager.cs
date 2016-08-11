@@ -58,8 +58,9 @@ public class PlayerManager : MonoBehaviour {
 			return teacherPatienceLevel;
 	}
 
-	public void MatchPatientBed(string bedTag, string concernTag){
-
+	public void RemovePatient(gameObject obj) {
+		Destroy (obj);
+		GameManager.Instance.removePatients ();
 	}
 
 }

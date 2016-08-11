@@ -9,6 +9,7 @@ public class retryButton : MonoBehaviour {
 	public void onClick(){
 		SuccessPanel.SetActive (false);
 		SceneManager.LoadScene (1);
+		//Application.LoadLevel(Application.loadedLevel);
 		
 	}
 }

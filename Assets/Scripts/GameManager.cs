@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour {
 		scoreBar.value += (x/totalPatients);
 	}
 
+
 	/* This function lessens the number of patients that still needs to be served
 	 *
 	 * param: none
@@ -76,6 +77,7 @@ public class GameManager : MonoBehaviour {
 		myPatients -= 1;
 		patientsLabel.text = "" + myPatients;
 	}
+
 
 	#region Generation
 	/* This function shows and generates the game time
@@ -107,12 +109,13 @@ public class GameManager : MonoBehaviour {
 			GameObject patient = (GameObject)Instantiate (somePatient);
 			patient.name = "patient"+(patientId++);
 
-			patient.transform.position = new Vector3 ((float)(-0.5*patientId), 0, 0);
+			patient.transform.position = new Vector3 ((float)(-0.2*patientId), 0.5f, -2);
 			currentPatient++;
 			Debug.Log (patient.name);
 		}
 	}
 	#endregion
+
 
 	/* This function shows the game over panel
 	 *
@@ -124,21 +127,4 @@ public class GameManager : MonoBehaviour {
 		Time.timeScale = 0;
 	}
 
-<<<<<<< HEAD
-=======
-	IEnumerator GeneratePatients(){
-		int currentPatients = 0;
-
-		while (currentPatients < totalPatients) {
-			int rand = UnityEngine.Random.Range(0, patients.Length);
-			yield return new WaitForSeconds (3f);
-			GameObject sprite = GameObject.Instantiate(patients[rand]) as GameObject;
-			sprite.transform.position= new Vector3 (-1.7f , 0.25f , 0);
-			currentPatients++;
-			Debug.Log ("NEW CHARACTER");
-		}
-	}
-
->>>>>>> 1541fce9613c734fdd28c2f8f3739d613e7385c7
-
-}  
+}

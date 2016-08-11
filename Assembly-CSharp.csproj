@@ -191,6 +191,7 @@
      <Compile Include="Assets\Scripts\PlayButton.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\ResumeScript.cs" />
+     <Compile Include="Assets\Scripts\retryButton.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.9.8.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />

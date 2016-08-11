@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 
 public class ExitButton : MonoBehaviour {
 
-	/* This function is called whenever the exit button is called. It returns to the Main Menu scene
+	/* This function is called whenever the exit button is clicked. It returns to the Main Menu scene
 	 * 
 	 * param: none
 	 * return: none

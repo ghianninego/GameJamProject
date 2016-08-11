@@ -12,19 +12,46 @@ using System.Collections;
 public class PatientScript : MonoBehaviour {
 
 	#region variables
-	public UIWidget concernBG;
+	private SpriteRenderer character;
+	private SpriteRenderer concern;
+	private float rand1;
+	private float rand2;
+
 	private int patienceLevel;
 	private int currentPatience;
 	private bool served = false;
 	#endregion
 
 	#region MonoBehaviour
-	void Start () {
-		patienceLevel = PlayerManager.Instance.SetPatienceLevel (gameObject.tag);
+	void Awake () {
+		character = gameObject.transform.Find ("Character").GetComponent<SpriteRenderer>();
+		concern = gameObject.transform.Find ("Concern").GetComponent<SpriteRenderer>();
+
+		SetCharacter ();
+		SetConcern ();
+	}
+
+	void Start() {
+		patienceLevel = PlayerManager.Instance.SetPatienceLevel (character.sprite.name);
 		currentPatience = patienceLevel;
-		concernBG.color = Color.green;
+		concern.color = Color.green;
 
 		StartCoroutine("NotYetServed");
+	}
+	#endregion
+
+
+	#region Set Sprites
+	private void SetCharacter() {
+		int x = Random.Range (0, PlayerManager.Instance.allCharacters.Length);
+		character.sprite = PlayerManager.Instance.allCharacters[x];
+		Debug.Log (character.sprite.name);
+	}
+
+	private void SetConcern() {
+		int x = Random.Range (0, PlayerManager.Instance.allConcerns.Length);
+		concern.sprite = PlayerManager.Instance.allConcerns [x];
+		Debug.Log (concern.sprite.name);
 	}
 	#endregion
 
@@ -45,13 +72,13 @@ public class PatientScript : MonoBehaviour {
 	 * param: none
 	 * return: none
 	 */
-	void ChangeColor() {
+	private void ChangeColor() {
 		if (currentPatience == (int)(0.25 * patienceLevel))
-			concernBG.color = Color.red;
+			concern.color = Color.red;
 		else if (currentPatience == (int)(0.5 * patienceLevel))
-			concernBG.color = Color.magenta;
+			concern.color = Color.magenta;
 		else if (currentPatience == (int)(0.75 * patienceLevel))
-			concernBG.color = Color.yellow;
+			concern.color = Color.yellow;
 	}
 
 	/* This function will run until the patient gets served.
@@ -71,7 +98,7 @@ public class PatientScript : MonoBehaviour {
 				break;
 			}
 
-			Debug.Log ("--" + currentPatience);
+			Debug.Log (this.gameObject.name+"--" + currentPatience);
 		}
 				
 	}

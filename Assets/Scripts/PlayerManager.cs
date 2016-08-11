@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour {
 	private bool served;
 	#endregion
 
+
 	#region MonoBehaviour
 	void OnEnable() {
 		if (Instance == null) {
@@ -57,8 +58,8 @@ public class PlayerManager : MonoBehaviour {
 			return teacherPatienceLevel;
 	}
 
-	public void SelectedPatient(string x) {
-		selectedSprite = x;
+	public void MatchPatientBed(string bedTag, string concernTag){
+
 	}
 
 }

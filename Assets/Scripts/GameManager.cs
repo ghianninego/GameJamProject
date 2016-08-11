@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
 	private float totalScore;
 	#endregion
 
+
 	#region MonoBehaviour
 	void OnEnable() {
 		if (Instance == null) {
@@ -102,7 +103,6 @@ public class GameManager : MonoBehaviour {
 	IEnumerator GeneratePatients(){
 		int currentPatient = 0;
 		int patientId = 1;
-
 
 		while (currentPatient < totalPatients) {
 			yield return new WaitForSeconds (5f);

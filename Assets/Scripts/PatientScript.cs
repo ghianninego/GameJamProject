@@ -20,13 +20,12 @@ public class PatientScript : MonoBehaviour {
 	private int patienceLevel;
 	private int currentPatience;
 	private bool served = false;
-	#endregion
 
 	private GameObject clickedBed;
 	private Ray ray;
 	private RaycastHit rayHit;
 	private bool wasClicked = false;
-
+	#endregion
 
 
 	#region MonoBehaviour
@@ -47,8 +46,28 @@ public class PatientScript : MonoBehaviour {
 
 		StartCoroutine("NotYetServed");
 	}
+
+	void Update(){
+		if (Input.GetMouseButtonDown (0)) {
+			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+
+			if (Physics.Raycast(ray, out rayHit)) {
+				clickedBed = rayHit.collider.gameObject;
+				//if (clickedBed.tag == concSprite.sprite.name && wasClicked)
+				if (clickedBed.tag == "Medicine" && wasClicked) {
+					this.gameObject.transform.position = clickedBed.transform.position;
+					Served ();
+				}
+			}
+		}
+	}
 	#endregion
 
+	void OnMouseDown() {
+		PlayerManager.Instance.selectedSprite = this.gameObject.name;
+		wasClicked = true;
+		Debug.Log ("Selected "+PlayerManager.Instance.selectedSprite);
+	}
 
 	#region Set Sprites
 	private void SetCharacter() {
@@ -62,33 +81,19 @@ public class PatientScript : MonoBehaviour {
 	}
 	#endregion
 
-
+	#region patient service
 	/* This function is called whenever the selected patient gets served.
 	 * It adds the achieved satisfaction rate for that patient to the current score
 	 *
 	 * param: none
 	 * return: none
 	 */
-	void Served() {
+	private void Served() {
 		served = true;
 		GameManager.Instance.SetScore (currentPatience/patienceLevel);
 	}
-
-	/* This function changes the color of the patient's mood based on his/her patience level.
-	 *
-	 * param: none
-	 * return: none
-	 */
-	private void ChangeColor() {
-		if (currentPatience == (int)(0.25 * patienceLevel))
-			concSprite.color = Color.red;
-		else if (currentPatience == (int)(0.5 * patienceLevel))
-			concSprite.color = Color.magenta;
-		else if (currentPatience == (int)(0.75 * patienceLevel))
-			concSprite.color = Color.yellow;
-	}
-
-	/* This function will run until the patient gets served.
+		
+	/* This function will run while the patient is not yet served.
 	 * The patient will leave once his/her patience reaches 0.
 	 *
 	 * param: none
@@ -107,25 +112,18 @@ public class PatientScript : MonoBehaviour {
 		}
 	}
 
-	void OnMouseDown() {
-		PlayerManager.Instance.selectedSprite = this.gameObject.name;
-		wasClicked = true;
-		Debug.Log ("Selected "+PlayerManager.Instance.selectedSprite);
+	/* This function changes the color of the patient's mood based on his/her patience level.
+	 *
+	 * param: none
+	 * return: none
+	 */
+	private void ChangeColor() {
+		if (currentPatience == (int)(0.25 * patienceLevel))
+			concSprite.color = Color.red;
+		else if (currentPatience == (int)(0.5 * patienceLevel))
+			concSprite.color = Color.magenta;
+		else if (currentPatience == (int)(0.75 * patienceLevel))
+			concSprite.color = Color.yellow;
 	}
-
-	void Update(){
-
-		if (Input.GetMouseButtonDown (0)) {
-			ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-
-			if(Physics.Raycast(ray, out rayHit)) {
-				clickedBed = rayHit.collider.gameObject;
-				if (clickedBed.tag == "Medicine" && wasClicked) {
-					this.gameObject.transform.position = clickedBed.transform.position;
-				} 
-
-			}
-
-		}
-	}
+	#endregion
 }

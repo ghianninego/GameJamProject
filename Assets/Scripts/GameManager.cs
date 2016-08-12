@@ -66,6 +66,8 @@ public class GameManager : MonoBehaviour {
 	 */
 	public void SetScore(float x){
 		scoreBar.value += (x/totalPatients);
+		Debug.Log ("SCORE: " + scoreBar.value);
+		ScoreManager.Instance.ShowScore(scoreBar.value);
 	}
 
 
@@ -89,7 +91,7 @@ public class GameManager : MonoBehaviour {
 	private void GenerateGameTime(){
 		timer -= Time.deltaTime;
 
-		if (timer <= 0) {
+		if (timer <= 0 || myPatients == 0) {
 			ShowGameOver ();
 		}
 		timerlabel.text = "" +(int)timer+"s";

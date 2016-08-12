@@ -58,7 +58,7 @@ public class PlayerManager : MonoBehaviour {
 			return teacherPatienceLevel;
 	}
 
-	public void RemovePatient(gameObject obj) {
+	public void RemovePatient(GameObject obj) {
 		Destroy (obj);
 		GameManager.Instance.removePatients ();
 	}

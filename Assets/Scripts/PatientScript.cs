@@ -53,30 +53,30 @@ public class PatientScript : MonoBehaviour {
 
 			if (Physics.Raycast(ray, out rayHit)) {
 				clickedBed = rayHit.collider.gameObject;
-				/* String concern = concSprite.sprite.name.substring(0,1)
-				 * if (wasClicked) {
-				 * 		if(clickedBed.tag.equals(concern){
-				 * 			laman shit niya
-				 * 		}
-				 * 		else{
-				 * 			do something if mali naclick niya
-				 * 		}
-				 * }
-				 */
-				if (clickedBed.tag == "Medicine" && wasClicked) {
-					this.gameObject.transform.position = clickedBed.transform.position;
-					Served ();
+				string concernId = concSprite.sprite.name.Substring (0, 1);
+
+				if (wasClicked == true) {
+					if (clickedBed.tag.Equals (concernId)) {
+						this.gameObject.transform.position = clickedBed.transform.position;
+						Served ();
+					} else if (clickedBed.tag.Equals ("WaitArea")) {
+						this.gameObject.transform.position = clickedBed.transform.position;
+						Debug.Log ("WAITING AREA");
+					} else if (!clickedBed.tag.Equals(concernId)) {
+						Debug.Log ("WRONG FACILITY");
+						//do something if wrong bed
+					}
 				}
 			}
 		}
 	}
-	#endregion
 
 	void OnMouseDown() {
 		PlayerManager.Instance.selectedSprite = this.gameObject.name;
 		wasClicked = true;
-		Debug.Log ("Selected "+PlayerManager.Instance.selectedSprite);
+		Debug.Log ("Selected: "+PlayerManager.Instance.selectedSprite);
 	}
+	#endregion
 
 	#region Set Sprites
 	private void SetCharacter() {
@@ -104,12 +104,14 @@ public class PatientScript : MonoBehaviour {
 	}
 
 	IEnumerator Facilitate() {
+		float addScore = (float)currentPatience / (float)patienceLevel;
+
 		yield return new WaitForSeconds (3f);
 		concSprite.sprite = PlayerManager.Instance.allConcerns [4];
 
 		yield return new WaitForSeconds (2f);
-		//PlayerManager.Instance.RemovePatient ();
-		GameManager.Instance.SetScore (currentPatience/patienceLevel);
+		PlayerManager.Instance.RemovePatient (gameObject);
+		GameManager.Instance.SetScore (addScore);
 	}
 		
 	/* This function will run while the patient is not yet served.
@@ -124,9 +126,7 @@ public class PatientScript : MonoBehaviour {
 			currentPatience -= 1;
 			ChangeColor ();
 			if (currentPatience == 0) {
-				//PlayerManager.Instance.RemovePatient ();
-				Destroy (gameObject);
-				GameManager.Instance.removePatients ();
+				PlayerManager.Instance.RemovePatient (gameObject);
 				break;
 			}
 		}

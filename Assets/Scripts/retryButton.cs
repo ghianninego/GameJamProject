@@ -6,10 +6,9 @@ public class retryButton : MonoBehaviour {
 
 	public GameObject SuccessPanel;
 
-	public void onClick(){
+	public void OnClick(){
 		SuccessPanel.SetActive (false);
-		Time.timeScale = 1;
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 
 		//SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 		//Application.LoadLevel(Application.loadedLevel);

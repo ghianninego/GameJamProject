@@ -1,0 +1,17 @@
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/obj/Debug/Assembly-CSharp.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/UnityEngine.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/UnityEditor.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Mono.Cecil.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Unity.DataContract.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/Shared/Jenkins/Desktop/GameJamProject/Temp/bin/Debug/Mono.Cecil.Mdb.dll

@@ -62,7 +62,7 @@ public class PatientScript : MonoBehaviour {
 					} else if (clickedBed.tag.Equals ("WaitArea")) {
 						this.gameObject.transform.position = clickedBed.transform.position;
 						Debug.Log ("WAITING AREA");
-					} else if (!clickedBed.tag.Equals(concernId)) {
+					} else if (!clickedBed.tag.Equals(concernId) && !clickedBed.tag.Equals("Patient")) {
 						Debug.Log ("WRONG FACILITY");
 						//do something if wrong bed
 					}

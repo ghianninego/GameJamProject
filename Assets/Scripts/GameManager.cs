@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour {
 	public static GameManager Instance = null;
 
 	#region variables
-	public float totalTime = 60f;
+	public float timer = 50f;
 	public int totalPatients = 6;
 	public UILabel timerlabel;
 	public UILabel patientsLabel;
@@ -24,8 +24,6 @@ public class GameManager : MonoBehaviour {
 	public GameObject somePatient;
 
 	private int myPatients;
-	private float timer;
-	private float totalScore;
 	#endregion
 
 
@@ -43,18 +41,18 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start () {
-		gameOver.SetActive (false);
-
+		scoreBar.value = 0;
 		myPatients = totalPatients;
-		totalScore = 0;
-		timer = totalTime+1;
 		timerlabel.text = timer+"s";
+
+		Time.timeScale = 1;
+		gameOver.SetActive (false);
 
 		StartCoroutine ("GeneratePatients");
 	}
 
 	void Update () {
-		GenerateGameTime ();
+		Invoke("GenerateGameTime", 1f);
 	}
 	#endregion
 
@@ -104,10 +102,9 @@ public class GameManager : MonoBehaviour {
 	 */
 	IEnumerator GeneratePatients(){
 		int currentPatient = 0;
-		int patientId = 1;
 
 		while (currentPatient < totalPatients) {
-			yield return new WaitForSeconds (5f);
+			yield return new WaitForSeconds (4f);
 			GameObject patient = (GameObject)Instantiate (somePatient);
 			patient.name = "patient"+(currentPatient+1);
 

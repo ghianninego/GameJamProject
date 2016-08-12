@@ -37,12 +37,15 @@ public class ScoreManager : MonoBehaviour {
 			Instance = null;
 		}
 	}
-
-	void Start() {
-		
-	}
 	#endregion
 
+
+	/* This function will display the score and if the player achieved the goal.
+	 * It will also display the number of hearts achieved.
+	 *
+	 * param: float
+	 * return: none
+	 */
 	public void ShowScore(float score) {
 		totalScore.text = (score*100) + "%";
 

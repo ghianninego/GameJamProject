@@ -58,6 +58,11 @@ public class PlayerManager : MonoBehaviour {
 			return teacherPatienceLevel;
 	}
 
+	/* This function destroys the patient game object and lessens the total patients to be served.
+	 *
+	 * param: GameObject
+	 * return: none
+	 */
 	public void RemovePatient(GameObject obj) {
 		Destroy (obj);
 		GameManager.Instance.removePatients ();
